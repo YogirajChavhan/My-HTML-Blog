@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why choose pyhton? - my Blog</title>
+</head>
+<style>
+    :root {
+        --bg-color: #f4f4f9;
+        --text-color:#333;
+        --card-bg:#fff;
+        --primary: #4CAF50;
+
+     }
+     
+
+     body {
+        font-family: Arial, sans-serif;
+        margin:0; padding:0;
+        background:var(--bg-color);
+        color: var(--text-color);
+        line-height: 1.5;
+     }
+     header {
+        background:var(--primary);
+        color: white;
+        padding:10px;
+        text-align: center;
+        position: sticky;
+        top: 0; z-index:1000;
+     }
+    
+     main {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+     }
+     article {
+        flex: 3;
+        background: var(--card-bg);
+        margin: 10px;
+        padding:20px;
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        
+     }
+     article h2{
+        color: #66bb6a;
+     }
+     section h3 {
+        color: #66bb6a;
+     }
+     aside {
+      flex: 1;
+      background: var(--card-bg);
+      margin: 10px;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 0 5px rgba(0,0,0,0.1);
+     }
+     aside h3{
+        color: #4CAF50;
+     }
+     .comment-box, .subscribe-box {
+        margin-top: 20px;
+        padding: 15px;
+        background: var(--card-bg);
+        border-radius: 8px;
+        width: 500px;
+        
+     }
+     .comment-box input,.comment-box textarea,
+     .subscribe-box input{
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        width: 500px;
+      
+        
+     }
+    
+     
+     .comment-box button, .subscribe-box button, #darkToggle {
+        background: var(--primary);
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;}
+
+    nav {
+        background: #333;
+        padding: 10px;
+        text-align: center;
+    }   
+    nav a {
+        color: white;
+        margin: 0 15px;
+        /* text-decoration: none; */
+        font-weight: bold;
+    } 
+
+    footer{
+        clear: both;
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 15px;
+    }
+    div h3{
+        color:#66bb6a ;
+        
+    }
+
+</style>
+<body>
+    <div class="progress" id="progressBar"></div>
+
+    <header>
+        <h1>Python programming language of Future</h1>
+        <p> Why Python is the top choice for the developers and businesses worldwide</p>
+        <button id="darkToggle">🌙 toggle Dark Mode</button>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#articles">Articles</a>
+        <a href="#contact">Contact</a>
+        <input type="text" id="searchBox" placeholder="Search posts...">
+
+    </nav>
+
+    <main>
+        <!-- blog -->
+        <article id="article">
+            <h2>Why choose python?</h2>
+            <p><i>posted on august 25, 2025 by Admin</i></p>
+            <section>
+                <h3>1.Easy to Learn</h3>
+                <p>Python's syntax is simple, close to  English, making is beginner friendly and powerful for experts.</p>
+
+            </section>
+            <section>
+                <h3>2.Real-Life Uses</h3>
+                <ul>
+                    <li>Web Development(Django,Flask)</li>
+                    <li>Data science (pandas, NumPy)</li>
+                    <li>AI/ML(TensorFlow,pytorch)</li>
+                    <li>Automation(script,bots)</li>
+                    <li>Full Stack Development</li>
+                </ul>
+            </section>
+            <section>
+                <h3>3.Modern World</h3>
+                <p>Companies like Google,Netflix, and NASA rely on python for AI,data , and automation.</p>
+            </section>
+         <!-- comment-box -->
+         <div class="comment-box">
+            <h3>Comments</h3>
+            <form id="commentForm">
+                <input type="text" id="name" placeholder="your Name" required>
+                <textarea id="comment" rows="3" placeholder="write a comment......" required></textarea>
+                <button type="submit">post</button>
+            </form>
+
+         </div>
+        </article>
+        <aside id="about">
+            <h3>About me </h3>
+            <p>I am a beginner web developer learning HTML,CSS and python for Ai and Data Science. </p>
+            <h3> Quick Links</h3>
+            <ul>
+                <li><a href="#">Learn Python</a></li>
+                <li><a href="#">Data Science</a></li>
+                <li><a href="#">AI Projects</a></li>
+                <li><a href="#">Web Dev</a></li>
+            </ul>
+            <div class="subscribe-box">
+                <h3>Subscribe</h3>
+                <input type="email" placeholder="your email">
+                <button>Subscribe</button>
+            </div>
+
+        </aside>
+    </main>
+    <footer id="contact">
+        <p>&copy; 2025 My Blog | All Rights Reserved</p>
+        <a href="tel:9307147443">9307147443</a> <br>
+        <a href="mailto:example@gamil.com">example@gamil.com</a>
+    </footer>
+</body>
+</html>
